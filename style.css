@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap');
+
+
+
+
+/* Home section */
+.navbar-brand{
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav .container .nav-item{
+    position: relative;
+    display: inline-block;
+    background-image: url(image/backgroundhero/beach.png);
+}
+
+
+nav .container .nav-item::after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #0094FF;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+nav .container .nav-item:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+nav .container .nav-logo .nav-item-logo{
+    color: #0094FF;
+    border: none;
+}
+
+nav .container .nav-logo .nav-item-logo a{
+    background-color: #0094FF;
+    border-radius: 50%;
+    margin-left: 5px;
+    color: white !important;
+
+}
+
+nav .container .nav-logo .nav-item-logo a:hover{
+    border: 1px solid #0094FF;
+    color: #0094FF !important;
+    background-color: #F0F0F0;
+    stroke: #0094FF !important;
+}
+
+
+/* inside */
+
+.title{
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    font-size: 4em ;
+
+}
+
+.title span{
+    color: #0094FF !important;
+    border-bottom: 0.5rem solid #0094FF;
+    
+}
+
+#Home .inside{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.btn-home{
+    padding: 2rem, 4rem;
+    font-size: 2rem;
+}
+
+.btn-home:hover{
+    background-color: transparent !important;
+    border: 2px solid #0094FF;
+    color: #0094FF !important;
+}
+
+#Car-home{
+    width: 100%;
+    z-index: 2;
+    padding: 0 3em;
+
+}
+
+.car-place .car-btn img{
+    width: 30%;
+    height: 100%;
+    border: 5px solid white;
+    border-radius: 30px;
+    margin: 0.5rem;
+    box-shadow: -2px 10px 5px -1px rgba(0,0,0,0.22);
+-webkit-box-shadow: -2px 10px 5px -1px rgba(0,0,0,0.22);
+-moz-box-shadow: -2px 10px 5px -1px rgba(0,0,0,0.22);
+}
+
+.car-place .car-btn img:hover{
+    border: 5px solid #0094FF;
+
+}
+
+
+#Work .container-fluid{
+    box-shadow: 0px -10px 6px -3px rgba(0,0,0,0.1);
+    padding: 2.5rem;
+}
+
+#Work .p-work{
+    margin-bottom: 0;
+
+}
+
+#Work .title-work{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+#Work .container-fluid .row .col{
+    margin: 1rem;
+}
+
+#Work .container-fluid .row .logo-explain{
+    color: #F0F0F0;
+    background-color: #0094FF;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 1rem; 
+}
+
+/* About section */
+
+
+#About .container .row .col-md-6 img{
+    border-radius: 5px;
+}
+
+#About .container .row .col-md-6{
+    margin: 2rem 0 2rem 0;
+}
+
+/* status section */
+
+/* Car Models section */
+
+.col-btn{
+    width: 6rem !important;
+    border: 5px solid #FFF !important;
+    border-radius: 3rem;
+    width: 80%;
+    height: 70%;
+}
+
+.col-btn:hover{
+    border-color: #e0e0e0 !important;
+
+}
+
+#Car-Models .container-fluid .row .col p{
+    color: #FFF !important;
+    font-weight: bold;
+    text-shadow: -2px -1px 11px rgba(255,255,255,1);
+    font-family: "inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#wafe{
+    fill: #0094FF;
+}
+
+/* splidejs */
+
+.card {
+    background-color: #fff; /* White background */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Box shadow */
+    text-align: center; /* Center text */
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.card .btn {
+    background-color: var(--bs-primary); /* Bootstrap primary color */
+    border-color: var(--bs-primary);
+    margin-top: auto; /* Push the button to the bottom */
+}
+.card-title, .card-text, .card-price {
+    margin-bottom: 0.5rem;
+}
+.card-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.splide__pagination__page{
+    display: none !important;
+}
+
+.splide__pagination__page.is-active {
+background-color: var(--bs-primary) !important; 
+}
+
+.splide__list {
+display: flex;
+flex-wrap: nowrap;
+}
+.splide__slide {
+height: 100%; /* Ensure slides take up full height */
+margin: 1rem;
+}
+.card {
+display: flex;
+flex-direction: column;
+justify-content: space-between; /* Distribute space evenly */
+height: 350px; /* Fixed height for all cards */
+/* width: 90%;  */
+}
+.card-body {
+flex: 1; /* Allow card body to expand and fill space */
+display: flex;
+flex-direction: column;
+justify-content: space-around; /* Evenly space the content */
+}
+
+.splide__list {
+    justify-content: left;
+
+}
+
+.card-slide{
+    width: 90%;
+}
+
+/* rating card */
+
+  
+.star-rating .fa-star-o{
+    color: #FFD700;
+    fill: #FFD700;
+    font-size: 1.5rem;
+}
+  
+.star-rating .fa {
+    cursor: pointer;
+}
+
+.responsive {
+    width: 90px;
+    height: 90px;
+}
+
+/* contact-section */
+
+.contact-box{
+    font-size: 1.3rem;
+}
+
+.contact-box input{
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #F0F0F0;
+}
+
+.contact-box textarea{
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #F0F0F0;
+    font-size: 1.3rem;
+}
+
+.submit-btn{
+    text-shadow: 0px 2px 2px rgb(61, 61, 61) !important;
+}
+
+.submit-btn:hover{
+    background-color: #006fbf !important;
+}
+
+.logo-footer{
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+/* laptop */
+
+@media (max-width: 1366px) {
+    html {
+      font-size: 70%;
+    }
+}
+
+/* Tablet 1 */
+
+@media (max-width:900px) {
+    nav .container .nav-logo .nav-item-logo a{
+        display: none;
+    }
+
+    .card-slide{
+        width: 94%;
+    }
+
+    .responsive {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+/* tablet */
+@media (max-width:800px) {
+    html{
+        font-size: 62.5%;
+    }
+
+    /* Home section */
+
+    ul.navbar-nav.nav-logo.ms-5 {
+        display: none;
+    }
+
+    /* Inside Home section */
+
+    #Home nav .title{
+        font-size: 3rem !important;
+    }
+
+    #Home .inside .row{
+        flex-direction: column-reverse;
+    }
+
+    #Home .inside .row .car-place{
+        margin-bottom: 2rem;
+    }
+    /* work section */
+
+    
+}
+
+/* phone */
+@media (max-width: 500px) {
+    html {
+      font-size: 55%;
+    }
+
+    .card-slide{
+        width: 98.5%;
+    }
+
+    .responsive {
+        width: 55px;
+        height: 55px;
+    }
+}
+

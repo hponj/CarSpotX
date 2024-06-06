@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="image/icon/Favicon(2).png" type="image/x-icon">
+    <!-- framework -->
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Include Font Awesome CSS --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- splidejs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+
+    <!-- Title -->
+    <title>CarspotX</title>
+</head>
+<body style="background-color: #fff;">
+  <nav class="navbar navbar-expand-lg shadow p-3 mb-5 bg-white rounded" style="position: fixed; background-color: #fff; left: 0%; right: 0;" id="navbar">
+    <div class="container ">
+      <a class="navbar-brand fs-3" href="#">CarSpotX.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fs-5">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#Work">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#Car-Models">Car Models</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#coment-section">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#contact-section">Contact Us</a>
+          </li>
+          
+        </ul>
+        <ul class="navbar-nav nav-logo ms-5">
+          <li class="nav-item-logo">
+            <a href="#" class="nav-link"><i data-feather="phone"></i></a>
+          </li>
+          <li class="nav-item-logo">
+            <a href="#" class="nav-link"><i data-feather="mail"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="Home" style="background-image: url(image/backgroundhero/beach.png);">
+    
+
+    <div class="container inside">
+      <div class="row d-flex ">
+        <div class="col">
+          <h1 class="title text-light" style="text-shadow: 0px 4px 2px #0909096a;">quality and safe car hire <span>with us
+          </span></h1>
+          <p class="fs-3 text-light" style="text-shadow: 0px 4px 2px #0909096a;">Explore Freedom: Car Hire Made Easyproducts</p>
+          <button class="btn btn-primary btn-home fs-4" style="background-color: #0094FF;">Learn More</button>
+        </div>
+
+        <div class="col car-place" >
+
+          <img src="image/car/BMW M2.png" alt="2017" id="Car-home">
+          <div class="square"></div>
+
+          <div class="car-btn d-flex justify-content-center">
+            <img src="image/btn/BMW-btn.png" alt="bmw" id="bmw-btn" onclick="bmwbtn()">
+            <img src="image/btn/GTR-2015-btn.png" alt="GTR" id="gtr-btn" onclick="gtrbtn()">
+            <img src="image/btn/frerari.png" alt="freari" id="frerari-btn" onclick="freraribtn()">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="Work" style="background-color: #fff;">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <p class="fs-3 text-center p-work" >How It Work</p>
+        <h3 class="fs-2 text-center title-work">Rent With 4 Steps Only</h3>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <i data-feather="user" class="logo-explain"></i>
+          <h4 class="fs-4">input personal data</h4>
+          <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit numquam facilis delectus facere, distinctio fugit velit voluptas ad illum corrupti, saepe id consequuntur debitis iusto quae dignissimos repellat. Accusantium, quis?</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <i  data-feather="map-pin" class="logo-explain"></i>
+          <h4 class="fs-4">Map selection</h4>
+          <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit numquam facilis delectus facere, distinctio fugit velit voluptas ad illum corrupti, saepe id consequuntur debitis iusto quae dignissimos repellat. Accusantium, quis?</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <i data-feather="calendar" class="logo-explain "></i>
+          <h4 class="fs-4">Pick-up Date</h4>
+          <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit numquam facilis delectus facere, distinctio fugit velit voluptas ad illum corrupti, saepe id consequuntur debitis iusto quae dignissimos repellat. Accusantium, quis?</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <i data-feather="bookmark" class="logo-explain"></i>
+          <h4 class="fs-4">Book A Car</h4>
+          <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit numquam facilis delectus facere, distinctio fugit velit voluptas ad illum corrupti, saepe id consequuntur debitis iusto quae dignissimos repellat. Accusantium, quis?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About section -->
+
+  <section id="About" style="background-color: #F7F7F7; padding-bottom: 3rem;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 ">
+        <img src="image/About/CAr.png" alt="About" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h4 class="fs-3">why choose our rental?</h4>
+        <p class="fs-4">
+          Because the cars we rent out are of high quality and very well maintained starting from the engine, body, and other things because we know safety is number one.
+          
+          Not only that, the facilities are also very good and attractive, you can use our cars without the hassle of coming to our place, we can send the car you ordered to any extent, we will also be responsible if there is an error or damage to our services or to the car that is rented.</p>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- status section -->
+
+  <section id="status" style="background: linear-gradient(to bottom, #F7F7F7 50%, #FFF 50%);">
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+            <div class="card m-2 "  >
+              <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+              <dotlottie-player src="https://lottie.host/b0f88561-1c4e-4302-bf7f-9e049446b6b5/JSHeIjKLRk.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></dotlottie-player>
+              <div class="card-body">
+                <h5 class="card-title h1 text-center" >1500+</h5>
+                <p class="card-text text-center h5">Users</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <div class="card m-2 ">
+              <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+              <dotlottie-player src="https://lottie.host/9c621f42-b9b6-40fa-91b2-9c6c6a308b8b/Gu10SiYgw7.json" background="transparent" speed="1" style="width: 100%; height: 100%;" class="card-img-top" loop autoplay></dotlottie-player>
+              <div class="card-body">
+                <h5 class="card-title h1 text-center" >1800+</h5>
+                <p class="card-text text-center h5">Happy client</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <div class="card m-2" >
+              <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+              <dotlottie-player src="https://lottie.host/5d701b64-f52e-439a-bb1e-17d3564199a0/O10vGpLfOr.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></dotlottie-player>
+              <div class="card-body">
+                <h5 class="card-title h1 text-center" >2000+</h5>
+                <p class="card-text text-center h5">Happy driver</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- car section -->
+
+  <section id="Car-Models" style="padding-top: 10rem;">
+    <div class="container">
+      <div>
+        <h3 style="font-weight: bold;" class="fs-2">Best rental car from us</h3>
+        <p style="color: #505050;" class="fs-4">Try our best and cool car only and Best driver only in here</p>
+      </div>
+    </div>
+    <div class="container-fluid" id="car-color" style="background: linear-gradient(to bottom, #FFF 50%, #0094FF 50%);">
+      <div class="row ">
+        <div class="col d-flex justify-content-center">
+          <img src="image/CarModels/car-models-color/Cyan.png" alt="Color" style="width: 100%; height: 100%; max-width: 40rem;" id="car-color-system">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center ">
+          <img src="image/CarModels/car-models-btn/Cyan.png" alt="Cyan" class="col-btn m-2" id="cyan-car" onclick="cyanON()">
+          <img src="image/CarModels/car-models-btn/Red.png" 
+          alt="Red" class="col-btn m-2" id="red-car" onclick="redON()">
+          <img src="image/CarModels/car-models-btn/Orange.png" alt="Orange" class="col-btn m-2" id="orange-car" onclick="orangeON()">
+          <img src="image/CarModels/car-models-btn/Dark blue.png" alt="Dark blue" class="col-btn m-2" id="darkblue-car" onclick="darkblueON()">
+          <img src="image/CarModels/car-models-btn/Gray.png" alt="Gray" class="col-btn m-2" id="gray-car" onclick="grayON()">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col car-wrap">
+          <p class="text-light text-center fs-4" id="car-color-text">Pure Blue</p>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path  fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,133.3C672,117,768,107,864,112C960,117,1056,139,1152,144C1248,149,1344,139,1392,133.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z" id="wafe"></path></svg>
+
+    <!-- Car slide -->
+    <div class="container ">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h3 style="font-weight: bold;" class="fs-2">Best Car Rent for you</h3>
+          <p style="color: #505050;" class="fs-4">Try our best and cool car only in here</p>
+        </div>
+
+        <button class="btn btn-primary h-50 fs-4"> See More <i class="fas fa-arrow-circle-right"></i></button>
+      </div>
+    </div>
+
+    <div class="container container-car">
+      <div class="splide"> 
+        <div class="splide__track">
+          <div class="splide__list">
+
+            <div class="col-sm-4 splide__slide m-2">
+              <div class="card card-slide">
+                  <img src="your-image-url1.jpg" alt="Card Image" width="300" height="300">
+                  <div class="card-body">
+                      <h5 class="card-title">Card 1</h5>
+                      <p class="card-text">With supporting text below as a natural </p>
+                      <p class="card-price">$19.99</p> <!-- Price -->
+                      <a href="#" class="btn btn-primary">Show More</a> <!-- Button text -->
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 splide__slide m-2">
+              <div class="card card-slide">
+                  <img src="your-image-url1.jpg" alt="Card Image" width="300" height="300">
+                  <div class="card-body">
+                      <h5 class="card-title">Card 2</h5>
+                      <p class="card-text">With supporting text below as a natural </p>
+                      <p class="card-price">$19.99</p> <!-- Price -->
+                      <a href="#" class="btn btn-primary">Show More</a> <!-- Button text -->
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 splide__slide m-2">
+              <div class="card card-slide">
+                  <img src="your-image-url1.jpg" alt="Card Image" width="300" height="300">
+                  <div class="card-body">
+                      <h5 class="card-title">Card 3</h5>
+                      <p class="card-text">With supporting text below as a natural </p>
+                      <p class="card-price">$19.99</p> <!-- Price -->
+                      <a href="#" class="btn btn-primary">Show More</a> <!-- Button text -->
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 splide__slide m-2">
+              <div class="card card-slide">
+                  <img src="your-image-url1.jpg" alt="Card Image" width="300" height="300">
+                  <div class="card-body">
+                      <h5 class="card-title">Card 4</h5>
+                      <p class="card-text">With supporting text below as a natural </p>
+                      <p class="card-price">$19.99</p> <!-- Price -->
+                      <a href="#" class="btn btn-primary">Show More</a> <!-- Button text -->
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 splide__slide m-2">
+              <div class="card card-slide">
+                  <img src="your-image-url1.jpg" alt="Card Image" width="300" height="300">
+                  <div class="card-body">
+                      <h5 class="card-title">Card 5</h5>
+                      <p class="card-text">With supporting text below as a natural </p>
+                      <p class="card-price">$19.99</p> <!-- Price -->
+                      <a href="#" class="btn btn-primary">Show More</a> <!-- Button text -->
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 splide__slide m-2">
+              <div class="card card-slide">
+                  <img src="your-image-url1.jpg" alt="Card Image" width="300" height="300">
+                  <div class="card-body">
+                      <h5 class="card-title">Card 6</h5>
+                      <p class="card-text">With supporting text below as a natural </p>
+                      <p class="card-price">$19.99</p> <!-- Price -->
+                      <a href="#" class="btn btn-primary">Show More</a> <!-- Button text -->
+                  </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Driver Slide -->
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h3 style="font-weight: bold;" class="fs-2">Best car driver for help your trip</h3>
+          <p style="color: #505050;" class="fs-4">Try our best and cool car only in here</p>
+        </div>
+    
+        <button class="btn btn-primary h-50 fs-4"> See More <i class="fas fa-arrow-circle-right"></i></button>
+      </div>
+    </div>
+
+    <div class="container container-drive">
+      <div class="splide2"> 
+        <div class="splide__track">
+          <div class="splide__list">
+
+            <div class="col-sm-4 splide__slide m-2">
+              <div class="card card-slide">
+                  <img src="your-image-url1.jpg" alt="Card Image" width="300" height="300">
+                  <div class="card-body">
+                      <h5 class="card-title">Card 1</h5>
+                      <p class="card-text">With supporting text below as a natural </p>
+                      <p class="card-price">$19.99</p> <!-- Price -->
+                      <a href="#" class="btn btn-primary">Show More</a> <!-- Button text -->
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 splide__slide m-2">
+              <div class="card card-slide">
+                  <img src="your-image-url1.jpg" alt="Card Image" width="300" height="300">
+                  <div class="card-body">
+                      <h5 class="card-title">Card 2</h5>
+                      <p class="card-text">With supporting text below as a natural </p>
+                      <p class="card-price">$19.99</p> <!-- Price -->
+                      <a href="#" class="btn btn-primary">Show More</a> <!-- Button text -->
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 splide__slide m-2">
+              <div class="card card-slide">
+                  <img src="your-image-url1.jpg" alt="Card Image" width="300" height="300">
+                  <div class="card-body">
+                      <h5 class="card-title">Card 3</h5>
+                      <p class="card-text">With supporting text below as a natural </p>
+                      <p class="card-price">$19.99</p> <!-- Price -->
+                      <a href="#" class="btn btn-primary">Show More</a> <!-- Button text -->
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 splide__slide m-2">
+              <div class="card card-slide">
+                  <img src="your-image-url1.jpg" alt="Card Image" width="300" height="300">
+                  <div class="card-body">
+                      <h5 class="card-title">Card 4</h5>
+                      <p class="card-text">With supporting text below as a natural </p>
+                      <p class="card-price">$19.99</p> <!-- Price -->
+                      <a href="#" class="btn btn-primary">Show More</a> <!-- Button text -->
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 splide__slide m-2">
+              <div class="card card-slide">
+                  <img src="your-image-url1.jpg" alt="Card Image" width="300" height="300">
+                  <div class="card-body">
+                      <h5 class="card-title">Card 5</h5>
+                      <p class="card-text">With supporting text below as a natural </p>
+                      <p class="card-price">$19.99</p> <!-- Price -->
+                      <a href="#" class="btn btn-primary">Show More</a> <!-- Button text -->
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 splide__slide m-2">
+              <div class="card card-slide">
+                  <img src="your-image-url1.jpg" alt="Card Image" width="300" height="300">
+                  <div class="card-body">
+                      <h5 class="card-title">Card 6</h5>
+                      <p class="card-text">With supporting text below as a natural </p>
+                      <p class="card-price">$19.99</p> <!-- Price -->
+                      <a href="#" class="btn btn-primary">Show More</a> <!-- Button text -->
+                  </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="coment-section" id="coment-section" style="margin-top: 8rem;">
+    <div class="container">
+      <div class="row">
+        <div class="text-center">
+          <h3 style="font-weight: bold;" class="fs-2">What people say<br>About us</h3>
+          <p style="color: #505050;" class="fs-4">lla, tristique nec augue nec, dignissim pretium nulla. Donec <br> vestibulum feugiat leo vitae egestas. Nulla facilisi. Mauris semper </p>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col d-flex justify-content-center m-2">
+          <div class="card" style="width: 100%;">
+            <div class="card-body">
+              
+              <div class="d-flex" style="margin-bottom: 1rem;">
+                <img src="image/client/OIP (2).jpeg" alt="img"   class="responsive">
+
+
+                <div style="text-align: left; margin-left: 2rem;">
+                  <h5 class="card-title fs-4">Tentang Kami</h5>
+                  <h6 class="card-subtitle mb-2 text-muted fs-5">Rating Pelanggan</h6>
+                  <div class="star-rating">
+                    <span class="fa fa-star-o" data-rating="1">★</span>
+                    <span class="fa fa-star-o" data-rating="2">★</span>
+                    <span class="fa fa-star-o" data-rating="3">★</span>
+                    <span class="fa fa-star-o" data-rating="4">★</span>
+                    <span class="fa fa-star-o" data-rating="5">★</span>
+                    <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                  </div>
+                </div>
+
+              </div>
+              <p class="card-text fs-5" style="text-align: left;">Beberapa teks contoh untuk membangun judul kartu dan membuat sebagian besar konten kartu.</p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col d-flex justify-content-center m-2">
+          <div class="card" style="width: 100%;">
+            <div class="card-body">
+              
+              <div class="d-flex " style="margin-bottom: 1rem;">
+                <img src="image/client/OIP (2).jpeg" alt="img"  class="responsive">
+
+
+                <div style="text-align: left; margin-left: 2rem;">
+                  <h5 class="card-title fs-4">Tentang Kami</h5>
+                  <h6 class="card-subtitle mb-2 text-muted fs-5">Rating Pelanggan</h6>
+                  <div class="star-rating">
+                    <span class="fa fa-star-o" data-rating="1">★</span>
+                    <span class="fa fa-star-o" data-rating="2">★</span>
+                    <span class="fa fa-star-o" data-rating="3">★</span>
+                    <span class="fa fa-star-o" data-rating="4">★</span>
+                    <span class="fa fa-star-o" data-rating="5">★</span>
+                    <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                  </div>
+                </div>
+
+              </div>
+              <p class="card-text fs-5 " style="text-align: left;">Beberapa teks contoh untuk membangun judul kartu dan membuat sebagian besar konten kartu.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-flex justify-content-center m-2">
+          <div class="card" style="width: 100%;">
+            <div class="card-body">
+              
+              <div class="d-flex " style="margin-bottom: 1rem;">
+                <img src="image/client/OIP (2).jpeg" alt="img"  class="responsive">
+
+
+                <div style="text-align: left; margin-left: 2rem;">
+                  <h5 class="card-title fs-4">Tentang Kami</h5>
+                  <h6 class="card-subtitle mb-2 text-muted fs-5">Rating Pelanggan</h6>
+                  <div class="star-rating">
+                    <span class="fa fa-star-o" data-rating="1">★</span>
+                    <span class="fa fa-star-o" data-rating="2">★</span>
+                    <span class="fa fa-star-o" data-rating="3">★</span>
+                    <span class="fa fa-star-o" data-rating="4">★</span>
+                    <span class="fa fa-star-o" data-rating="5">★</span>
+                    <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                  </div>
+                </div>
+
+              </div>
+              <p class="card-text fs-5 " style="text-align: left;">Beberapa teks contoh untuk membangun judul kartu dan membuat sebagian besar konten kartu.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact-section" style="margin-top: 8rem;">
+    <div class="container">
+      <div class="row">
+        <div class="text-left">
+          <h3 style="font-weight: bold;" class="fs-2">Contact Us </h3>
+          <p style="color: #505050;" class="fs-4">contact us if you have more questions and concerns. </p>
+        </div>
+      </div>
+  
+      <div class="row shadow p-3 mb-5 bg-white rounded" style="border: 1px solid rgba(0,0,0,.125); border-radius: 1.5rem; padding: 1rem; margin: 0.5rem !important;">
+        <div class="col-lg-6  col-sm-12 ">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.8436872745965!2d106.64832177512181!3d-6.6662842933286965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d11270ea83ed%3A0xa457fae935fcf6c9!2sIDN%20Boarding%20School%20Pamijahan%20Bogor!5e0!3m2!1sid!2sid!4v1714795591675!5m2!1sid!2sid" width="100%" height="100%" style="border:0; border-radius: 1.3rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="col-lg-6  col-sm-12">
+          <form action="post" class="contact-box">
+            <input type="text" placeholder="Your Name" style="width: 100%;"><br>
+            <input type="email" style="width: 100%;" placeholder="Your Gmail">
+            <textarea class="form-control"  rows="6rem" placeholder="Enter your message here"></textarea>
+            <input type="submit" class="submit-btn text-light" style="width: 100%; background-color: #0094FF;">
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="footer" id="footer" style="background-color: #1D2124; margin-top: 6rem;">
+    <footer>
+      <div class="container" >
+        <div class="row" style="padding: 2rem;">
+          <div class="col">
+            <a class="logo-footer fs-4 text-align text-light" href="#">CarSpotX.</a>
+            <p class="text-light fs-5">car rental website created to improve skills as well as add experience and add to the portfolio and also as a reference for other learning.</p>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <div class="d-flex" style="flex-direction: column;">
+              <h5 class="text-light" style="font-weight: bold;">Our-Link</h5>
+              <a href="#" class="text-light fs-5" style="text-decoration: none;">Home</a>
+              
+              <a href="#" class="text-light fs-5" style="text-decoration: none;">About US</a>
+   
+              <a href="#" class="text-light fs-5" style="text-decoration: none;">Our Product</a>
+  
+              <a href="#" class="text-light fs-5" style="text-decoration: none;">Blog</a>
+  
+              <a href="#" class="text-light fs-5" style="text-decoration: none;">Contact</a>
+
+            </div>
+
+          </div>
+          
+          <div class="col d-flex justify-content-center">
+            <div class="d-flex" style="flex-direction: column;">
+              <h5 class="text-light" style="font-weight: bold;">Social Media</h5>
+              <a href="#" class="text-light fs-5" style="text-decoration: none;">CarSpotX@gmail.com</a>
+              
+              <a href="#" class="text-light fs-5" style="text-decoration: none;">CarSpotX-YT</a>
+   
+              <a href="#" class="text-light fs-5" style="text-decoration: none;">hponj</a>
+  
+              <a href="#" class="text-light fs-5" style="text-decoration: none;">CarSpotX-IG</a>
+
+            </div>
+
+          </div>
+          
+
+        </div>
+
+        <div class="row" style="padding-bottom: 1.5rem;">
+          <div class="col text-center">
+            <h5 class="text-light">Created by Faheem,project | © 2024</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  
+
+  
+
+  
+
+  <!-- Java Script and framework -->
+  <script src="javascript.js"></script>
+  <!-- Boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- feather icon -->
+  <script>feather.replace();</script>
+
+  <!-- splide js -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+
+  <script>
+    var splide = new Splide('.splide', {
+      type      : 'loop',
+      perPage   : 3,
+      perMove   : 1,
+      rewind: true,
+      arrows: false,
+      autoplay  : true, // Enable autoplay for an infinite loop
+      focus: 0,
+      interval: 3000,
+      breakpoints: {
+        500: {
+          perPage: 1, // If the screen width is 500px, show 1 card only
+        },
+        922: {
+          perPage: 2, // If the screen width is 922px, show 2 cards
+        },
+      },
+    });
+    
+    splide.mount();
+
+    var splide = new Splide('.splide2', {
+      type      : 'loop',
+      perPage   : 3,
+      perMove   : 1,
+      rewind: true,
+      arrows: false,
+      autoplay  : true, // Enable autoplay for an infinite loop
+      focus: 0,
+      interval: 3000,
+      breakpoints: {
+        500: {
+          perPage: 1, // If the screen width is 500px, show 1 card only
+        },
+        922: {
+          perPage: 2, // If the screen width is 922px, show 2 cards
+        },
+      },
+    });
+    
+    splide.mount();
+
+    
+  </script>
+</body>
+</html>
